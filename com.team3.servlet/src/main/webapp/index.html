@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mahindra Showroom</title>
+<meta charset="utf-8" />
+</head>
+<body>
+	<h1>Welcome to Mahindra Auto!!</h1>
+	<p style="font-weight: bold; color: black;">This is a empolyee page, where you can Add Products,Remove a Porduct,View Product details, Update Product details and View all products!! </p>
+<style>
+	body{
+		background-image: url(https://etimg.etb2bimg.com/photo/85170691.cms);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size:  50%;
+		background-attachment: fixed;
+		font-family: Arial, sans-serif;		
+		color: black;		
+		margin: 0;
+        padding: 0;
+	}
+	h1{
+		font-size: 36px;
+    	font-weight: bold;
+    	margin-bottom: 0;
+    	text-align: center;
+    	background-color: wheat;
+    	color: black;
+    	margin-top:  0;
+	}
+	p{
+		font-size: 20px;
+    	line-height: 1.5;
+    	text-align: center;
+    	margin-top:  0;
+    	background-color: wheat;
+	}	
+	 th, td {
+        border: 3px solid wheat;
+        padding: 8px;
+        text-align: left;
+    }
+    .bottom-left-content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+} 
+
+.bottom-bar {
+    background-color: wheat;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+table {
+            margin-top: 150px; 
+            }
+            button{
+				 background-color: wheat; color: black;
+				  border: none; border-radius: 5px;
+				  padding: 10px 20px;
+				  cursor: pointer;
+			}
+</style>
+
+<table align="left">
+        <tr>
+            <td>Add a Product?</td>
+            <td><button onclick="window.location.href='Carslist.html';">Add Products</button></td>
+        </tr>
+        <tr>
+            <td>Remove a Product?</td>
+            <td><button onclick="window.location.href='Removeproduct.html';">Remove Products</button></td>
+        </tr>
+        <tr>
+            <td>Update a Product?</td>
+            <td><button onclick="window.location.href='Updateproduct.html';">Update Products</button></td>
+        </tr>
+    </table>
+
+    <table align="right">
+        <tr>
+            <td>View Product?</td>
+            <td><button onclick="window.location.href='CarsListViewP.html';">View Product details</button></td>
+        </tr>
+        <tr>
+            <td>View all Products</td>
+            <td><button onclick="window.location.href='Viewallproducts.html';">View All Product details</button></td>
+        </tr>
+    </table>
+
+<div class="bottom-bar"></div>
+<div class="bottom-left-content">
+    <h3 style="margin-bottom: 10px; font-size: 20px;">Want to explore Mahindra SUVs,Please visit the below link!</h3>
+    <button onclick="window.location.href='https://auto.mahindra.com/';" style="font-size: 15px; padding: 10px 20px; background-color: black; color: wheat; border: none; border-radius: 5px; cursor: pointer;">Click Here</button>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    id="WebApp_ID" version="3.1">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>Addproduct.html</welcome-file>
+        <welcome-file>Success.jsp</welcome-file>
+        <welcome-file>SuccessScorpio.jsp</welcome-file>
+        <welcome-file>SuccessThar.jsp</welcome-file>
+        <welcome-file>Failure.html</welcome-file>
+        <welcome-file>Carslist.html</welcome-file>
+        <welcome-file>AddproductScorpio.html</welcome-file>
+        <welcome-file>AddproductThar.html</welcome-file>
+        <welcome-file>ViewProductScorpio.html</welcome-file>
+        <welcome-file>ViewProductThar.html</welcome-file>
+        <welcome-file>ViewProductXUV700.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>CreatedServlet</servlet-name>
+        <servlet-class>com.servlet.controller.CreatedServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <servlet-name>CreatedServletScorpio</servlet-name>
+    <servlet-class>com.servlet.controller.CreatedServletScorpio</servlet-class>
+    </servlet>
+    
+    <servlet>
+    <servlet-name>CreatedServletThar</servlet-name>
+    <servlet-class>com.servlet.controller.CreatedServletThar</servlet-class>
+    </servlet>
+    
+    <servlet>
+    <servlet-name>MahhindraScorpioServlet</servlet-name>
+    <servlet-class>com.servlet.controller.MahhindraScorpioServlet</servlet-class>
+    </servlet>
+    
+       <servlet>
+    <servlet-name>MahhindraTharServlet</servlet-name>
+    <servlet-class>com.servlet.controller.MahhindraTharServlet</servlet-class>
+    </servlet>
+    
+       <servlet>
+    <servlet-name>MahhindraXUV700Servlet</servlet-name>
+    <servlet-class>com.servlet.controller.MahhindraXUV700Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreatedServlet</servlet-name>
+        <url-pattern>/CreatedServlet</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>CreatedServletScorpio</servlet-name>
+        <url-pattern>/CreatedServletScorpio</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>CreatedServletThar</servlet-name>
+        <url-pattern>/CreatedServletThar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MahhindraScorpioServlet</servlet-name>
+        <url-pattern>/MahhindraScorpioServlet</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>MahhindraXUV700Servlet</servlet-name>
+        <url-pattern>/MahhindraXUV700Servlet</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>MahhindraTharServlet</servlet-name>
+        <url-pattern>/MahhindraTharServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
