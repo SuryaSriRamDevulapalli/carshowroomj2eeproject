@@ -76,13 +76,16 @@ public class CreatedServlet extends HttpServlet {
     	try {
 			Servletentity entity = imp.SearchXUV700(variant);
 			HttpSession session = request.getSession();
+			//This line retrieves the current session associated with the request. If there is no session associated with the request, it creates one. The session allows you to store and retrieve objects across multiple servlets or requests.
 			session.setAttribute("mahindraobject", entity);
+			//This line sets an attribute named "mahindraobject" in the session and associates it with the object referenced by the entity variable. This allows you to store the entity object in the session so that it can be accessed later by other servlets or requests.
 			
 			RequestDispatcher success = request.getRequestDispatcher("/MahhindraXUV700Servlet");
 			RequestDispatcher failed = request.getRequestDispatcher("/Failure.html");
 			
 			if(entity!=null) {
-				success.forward(request, response);				
+				success.forward(request, response);	
+				///This line starts an if statement that checks if the entity object is not null. If the entity object is not null, it means that the search operation was successful and a valid Servletentity object was retrieved.
 			}else {
 				failed.forward(request, response);		
 			}

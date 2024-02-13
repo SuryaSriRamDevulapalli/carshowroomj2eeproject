@@ -11,11 +11,31 @@
         <welcome-file>SuccessThar.jsp</welcome-file>
         <welcome-file>Failure.html</welcome-file>
         <welcome-file>Carslist.html</welcome-file>
+        <welcome-file>CarsListViewP.html</welcome-file>
+        <welcome-file>Removeproduct.html</welcome-file>
+        <welcome-file>Viewallproducts.html</welcome-file>
         <welcome-file>AddproductScorpio.html</welcome-file>
         <welcome-file>AddproductThar.html</welcome-file>
         <welcome-file>ViewProductScorpio.html</welcome-file>
         <welcome-file>ViewProductThar.html</welcome-file>
         <welcome-file>ViewProductXUV700.html</welcome-file>
+        <welcome-file>FetchThar.html</welcome-file>
+        <welcome-file>FetchScorpio.html</welcome-file>
+        <welcome-file>FetchXUV700.html</welcome-file>
+        <welcome-file>FetchXUV700.jsp</welcome-file>
+        <welcome-file>FetchScorpio.jsp</welcome-file>
+        <welcome-file>FetchThar.jsp</welcome-file>
+        <welcome-file>Delete.jsp</welcome-file>
+        <welcome-file>DeleteScorpio.jsp</welcome-file>
+        <welcome-file>DeleteThar.jsp</welcome-file>
+        <welcome-file>DeleteXUV700.html</welcome-file>
+		<welcome-file>DeleteScorpio.html</welcome-file>
+		<welcome-file>DeleteThar.html</welcome-file>
+		<welcome-file>Success1.jsp</welcome-file>
+		<welcome-file>Updateproduct.html</welcome-file>
+		<welcome-file>UpdateXUV700.html</welcome-file>
+		<welcome-file>UpdateScorpio.html</welcome-file>
+		<welcome-file>UpdateThar.html</welcome-file>
     </welcome-file-list>
 
     <servlet>
@@ -46,6 +66,36 @@
     <servlet-name>MahhindraXUV700Servlet</servlet-name>
     <servlet-class>com.servlet.controller.MahhindraXUV700Servlet</servlet-class>
     </servlet>
+    
+    <servlet>
+    <servlet-name>FetchXUV700</servlet-name>
+    <servlet-class>com.servlet.controller.FetchXUV700</servlet-class>
+    </servlet>
+    
+       <servlet>
+    <servlet-name>FetchScorpio</servlet-name>
+    <servlet-class>com.servlet.controller.FetchScorpio</servlet-class>
+    </servlet>
+    
+       <servlet>
+    <servlet-name>FetchThar</servlet-name>
+    <servlet-class>com.servlet.controller.FetchThar</servlet-class>
+    </servlet>
+    
+    <servlet>
+    <servlet-name>DeleteUpdateServletXUV700</servlet-name>
+    <servlet-class>com.servlet.controller.DeleteUpdateServletXUV700</servlet-class>
+    </servlet>
+    
+     <servlet>
+    <servlet-name>DeleteUpdateServletScorpio</servlet-name>
+    <servlet-class>com.servlet.controller.DeleteUpdateServletScorpio</servlet-class>
+    </servlet>
+    
+     <servlet>
+    <servlet-name>DeleteUpdateServletThar</servlet-name>
+    <servlet-class>com.servlet.controller.DeleteUpdateServletThar</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>CreatedServlet</servlet-name>
@@ -70,6 +120,32 @@
       <servlet-mapping>
         <servlet-name>MahhindraTharServlet</servlet-name>
         <url-pattern>/MahhindraTharServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>FetchXUV700</servlet-name>
+        <url-pattern>/FetchXUV700</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>FetchScorpio</servlet-name>
+        <url-pattern>/FetchScorpio</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>FetchThar</servlet-name>
+        <url-pattern>/FetchThar</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteUpdateServletXUV700</servlet-name>
+        <url-pattern>/DeleteUpdateServletXUV700</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUpdateServletScorpio</servlet-name>
+        <url-pattern>/DeleteUpdateServletScorpio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUpdateServletThar</servlet-name>
+        <url-pattern>/DeleteUpdateServletThar</url-pattern>
     </servlet-mapping>
 
 </web-app>

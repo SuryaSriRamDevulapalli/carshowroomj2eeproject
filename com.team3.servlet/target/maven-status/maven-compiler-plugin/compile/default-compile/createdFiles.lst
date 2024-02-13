@@ -1,0 +1,16 @@
+com\servlet\controller\FetchScorpio.class
+com\team3\servlet\implementation\Implementation.class
+com\servlet\controller\DeleteUpdateServletScorpio.class
+com\servlet\controller\MahhindraScorpioData.class
+com\servlet\controller\DeleteUpdateServletXUV700.class
+com\servlet\controller\CreatedServletThar.class
+com\servlet\controller\DeleteUpdateServletThar.class
+com\servlet\controller\MahhindraTharServlet.class
+com\servlet\controller\FetchXUV700.class
+com\servlet\controller\FetchThar.class
+com\servlet\controller\CreatedServlet.class
+com\servlet\controller\MahhindraScorpioServlet.class
+com\servlet\controller\MahhindraXUV700Servlet.class
+com\servlet\jdbc\JDBC.class
+com\servlet\controller\CreatedServletScorpio.class
+com\servlet\encapsulated\Servletentity.class
