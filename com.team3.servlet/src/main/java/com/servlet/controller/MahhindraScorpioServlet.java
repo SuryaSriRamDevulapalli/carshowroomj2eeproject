@@ -21,7 +21,9 @@ public class MahhindraScorpioServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		response.setContentType("text/html");
 		HttpSession session = request.getSession();
+		//This line retrieves the current session associated with the request. If there is no session associated with the request, it creates one. The session allows you to store and retrieve objects across multiple servlets or requests.
 		Object obj = session.getAttribute("mahindraobject");
+		// This line retrieves the value of an attribute named "mahindraobject" from the session and assigns it to the obj variable. The getAttribute method is used to retrieve the value of the specified attribute from the session. In this case, it retrieves the value associated with the key "mahindraobject".
 		Servletentity mahindra = null;
 		if(obj != null) {
 			mahindra = (Servletentity) obj;
@@ -31,10 +33,11 @@ public class MahhindraScorpioServlet extends HttpServlet{
 		//This assumes that "mahindraobject" is an attribute previously set in the session and its value is an instance of Servletentity. The retrieved value is cast to Servletentity and assigned to the variable mahindra.
 		//which is retrieved from CreatedServletScorpio
 		//Object obj = session.getAttribute("mahindraobject"); retrieves an object from the session with the attribute name "mahindraobject" and assigns it to the obj variable.
-		//This line retrieves an object previously stored in the session with the specified attribute name.
+		
 		
 		
 		//Servletentity mahindra = (Servletentity) session.getAttribute("mahindraobject");
+		//This line retrieves an object previously stored in the session with the specified attribute name.
 		
 		PrintWriter pw = response.getWriter();
 		pw.print("<html><body>");
